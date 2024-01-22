@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Minimal AI UI",
+    "description": "The simplest possible UI for the Web",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ]
+}
